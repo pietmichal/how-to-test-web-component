@@ -1,0 +1,28 @@
+{
+  "name": "how-to-test-web-component",
+  "version": "1.0.0",
+  "description": "This is a repository containing a project demonstrating how to test both Vanilla and LitElement-based Web Components.",
+  "main": "index.js",
+  "dependencies": {
+    "jasmine": "^3.3.0",
+    "karma": "^3.1.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-spec-reporter": "0.0.32"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unrealprogrammer/how-to-test-web-component.git"
+  },
+  "author": "Michal Pietraszko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unrealprogrammer/how-to-test-web-component/issues"
+  },
+  "homepage": "https://github.com/unrealprogrammer/how-to-test-web-component#readme"
+}
