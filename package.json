@@ -4,9 +4,11 @@
   "description": "This is a repository containing a project demonstrating how to test both Vanilla and LitElement-based Web Components.",
   "main": "index.js",
   "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.2.0",
     "jasmine": "^3.3.0",
     "karma": "^3.1.1",
     "karma-chrome-launcher": "^2.2.0",
+    "karma-edge-launcher": "^0.4.2",
     "karma-firefox-launcher": "^1.1.0",
     "karma-jasmine": "^2.0.1",
     "karma-spec-reporter": "0.0.32"

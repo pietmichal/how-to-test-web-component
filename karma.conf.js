@@ -3,8 +3,9 @@ module.exports = function(config) {
     basePath: "",
     frameworks: ["jasmine"],
     files: [
-      { pattern: "**/*.test.js", type: "module" },
-      { pattern: "**/*.component.js", type: "module", included: false }
+      "node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js",
+      { pattern: "**/*.test.js", type: "module", included: true },
+      { pattern: "**/*.js", type: "module", included: false }
     ],
     exclude: [],
     preprocessors: {},
@@ -13,8 +14,8 @@ module.exports = function(config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ["Chrome"],
-    singleRun: false,
+    browsers: ["Chrome", "Firefox", "Edge"],
+    singleRun: true,
     concurrency: Infinity
   });
 };
