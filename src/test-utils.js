@@ -16,10 +16,15 @@ export class TestUtils {
   }
 
   static _waitForComponentToRender(tag) {
-    return new Promise(resolve =>
-      setTimeout(() => {
-        resolve(document.querySelector(tag));
-      })
-    );
+    return new Promise(resolve => {
+      function requestComponent() {
+        const element = document.querySelector(tag);
+        if (!element) {
+          return window.requestAnimationFrame(requestComponent);
+        }
+        return resolve(element);
+      }
+      requestComponent();
+    });
   }
 }
