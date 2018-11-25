@@ -1,6 +1,6 @@
 # How To Test a Web Component
 
-This is a repository containing a project demonstrating how to test both Vanilla and LitElement-based Web Components.
+This is a repository containing a project demonstrating how to test Web Components.
 
 # Related Article
 
